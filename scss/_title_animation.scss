@@ -1,0 +1,55 @@
+h1 {
+    position:relative;
+    color: #fff;
+    font-size: 7rem;
+}
+h1:before,
+h1:after{
+    position:absolute;
+    top:0;bottom:0;right:0;left:0;
+    content: attr(data-text);
+}
+h1:before {
+    z-index:-1;
+    color: purple;
+    animation: hello1 0.3s ease infinite;
+}
+h1:after {
+    z-index:-2;
+    color: cyan;
+    animation: hello2 0.3s ease infinite reverse;
+}
+@keyframes hello1 {
+    0% {
+    transform: translate(-2px,-2px);
+    }
+    25% {
+    transform: translate(-4px,-4px);
+    }
+    50% {
+    transform: translate(-2px,-2px);
+    }
+    75% {
+    transform: translate(2px,-4px);
+    }
+    100% {
+    transform: translate(-2px,-2px);
+    }
+}
+@keyframes hello2 {
+    0% {
+    transform: translate(-2px,-2px);
+    }
+    25% {
+    transform: translate(-4px,-4px);
+    }
+    50% {
+    transform: translate(-2px,-2px);
+    }
+    75% {
+    transform: translate(2px,-4px);
+    }
+    100% {
+    transform: translate(-2px,-2px);
+    }
+}

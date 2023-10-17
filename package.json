@@ -1,5 +1,15 @@
 {
+  "name": "sass",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass -w scss:css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "dependencies": {
-    "sass": "^1.69.0"
+    "sass": "^1.68.0"
   }
 }
